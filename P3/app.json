@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Latihan_2",
-    "slug": "Latihan_2",
+    "name": "P3",
+    "slug": "P3",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,8 +19,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.anonymous.Latihan_2"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
