@@ -23,6 +23,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'black',
     },
     header: {
+        paddingTop: 25,
+        paddingBottom: 10,
         flex: 1,
         justifyContent: 'center',
         paddingHorizontal: 10,
