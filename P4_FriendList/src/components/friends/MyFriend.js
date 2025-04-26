@@ -1,39 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { Component } from 'react';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
-import SearchBar from './widgets/SearchBar';
+import React, { Component } from "react";
+import { View, StyleSheet, SafeAreaView, StatusBar } from "react-native";
+import SearchBar from "./widgets/SearchBar";
+import ExpScrollView from "./modules/ExpScrollView";
+import Users from "./const-data/UserItems";
 
-class MyFriend extends Component {
-    render() {
-        return (
-            <SafeAreaView style={styles.container}>
-                {/* <StatusBar hidden={false} style="light"/> */}
-                <View style={styles.header}>
-                    <SearchBar />
-                </View>
-                <View style={styles.body}></View>
-            </SafeAreaView>
-        );
-    }
+class MyFriends extends Component {
+  render() {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.header}>
+          <SearchBar />
+        </View>
+        <View style={styles.body}>
+          <ExpScrollView Users={Users} />
+        </View>
+      </SafeAreaView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: 'black',
-    },
-    header: {
-        paddingTop: 25,
-        paddingBottom: 10,
-        flex: 1,
-        justifyContent: 'center',
-        paddingHorizontal: 10,
-        backgroundColor: 'orange',
-    },
-    body: {
-        flex: 10,
-        backgroundColor: 'green',
-    },
-})
+  container: {
+    flex: 1,
+    backgroundColor: "#F5C0BF",
+  },
+  header: {
+    flex: 1,
+    backgroundColor: "pink",
+    paddingHorizontal: 10,
+    justifyContent: "center",
+  },
+  body: {
+    flex: 10,
+    backgroundColor: "salmon",
+  },
+});
 
-export default MyFriend;
+export default MyFriends;

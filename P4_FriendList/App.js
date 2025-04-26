@@ -1,19 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import MyFriends from './src/components/friends/MyFriend.js';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import MyFriends from "./src/components/friends/MyFriend";
+
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <MyFriends />
-      {/* <StatusBar style="sauto" /> */}
-    </SafeAreaView>
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
 });
